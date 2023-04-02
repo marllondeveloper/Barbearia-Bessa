@@ -25,7 +25,7 @@ class Home : AppCompatActivity() {
 
     private fun configServico(){
         val nome = intent.extras?.getString("nome")
-        binding.idTextNomeUsuario.text = "Bem-Vindo(a), $nome"
+        binding.idTextNomeUsuario.text = "Bem-Vindo, $nome"
         val recyclerViewServicos = binding.idRecyclerViewServicos
         recyclerViewServicos.layoutManager = GridLayoutManager(this, 2)
         servicosAdapter = ServicosAdapter(this, listaServicos)
